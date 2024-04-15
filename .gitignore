@@ -1,6 +1,7 @@
 # manually added
 python-fundamentals-main/
 *.pdf
+*.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
