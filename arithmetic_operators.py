@@ -47,3 +47,12 @@ print(f"{num_ten_cent} ten cent coins")
 print(f"{num_five_cent} five cent coins")
 print(f"{num_one_cent} one cent coins")
 #to-do: try to connect this exersize with user input.
+
+#Exercise 4: Percent Calculator
+def calculate_percentage(number1, number2):
+  percentage = (number2 / number1) * 100
+  return percentage
+number1 = 286
+number2 = 26
+percentage = calculate_percentage(number1, number2)
+print(f"{number2} is {percentage:.0f}% of {number1}.")
