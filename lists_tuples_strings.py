@@ -18,21 +18,21 @@ for cat in reversed(cats):
 # Remove the first element
 first_cat = cats.pop(0)
 print(f"Removed first cat: {first_cat}")
-print(cats)  
+print(cats)
 
 # Sort the list alphabetically
 cats.sort()
-print(cats)  
+print(cats)
 
 # Numbers from 1 to 10
 numbers = [x for x in range(1, 11)]
-print(numbers)  
+print(numbers)
 
 # Squares of numbers in the list
 squares = [x * x for x in numbers]
-print(squares)  
+print(squares)
 
 # Tuples
-'''Tuples are like lists but immutable. Don't really get the point of using them instead of the lists.'''
+"""(Tuples) are like lists but immutable and faster (hold less memory). So I'm not doing extra exercizes on them."""
 
 # Strings
