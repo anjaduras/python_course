@@ -36,3 +36,4 @@ print(squares)
 """(Tuples) are like lists but immutable and faster (hold less memory). So I'm not doing extra exercizes on them."""
 
 # Strings
+"""Those are also self explainatory, not doing extra exercizes"""
