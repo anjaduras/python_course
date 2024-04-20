@@ -33,5 +33,6 @@ squares = [x * x for x in numbers]
 print(squares)  
 
 # Tuples
+'''Tuples are like lists but immutable. Don't really get the point of using them instead of the lists.'''
 
 # Strings
