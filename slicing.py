@@ -29,4 +29,4 @@ print(
     "Last name in uppercase:", last_name_upper
 ) 
 
-
+#Manipulating sequences
