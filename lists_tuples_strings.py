@@ -37,3 +37,5 @@ print(squares)
 
 # Strings
 """Those are also self explainatory, not doing extra exercizes"""
+
+# Manipulating sequences
