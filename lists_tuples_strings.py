@@ -53,3 +53,10 @@ my_list.insert(0,100)
 print(my_list)
 my_list.insert(4, 4.5)
 print(my_list)
+
+#Unpacking a sequence
+gagaboni = ("Anja", 18, "boba tea")
+(name, age, drink) = gagaboni
+print(name)
+print(age)
+print(drink)
