@@ -39,3 +39,17 @@ print(squares)
 """Those are also self explainatory, not doing extra exercizes"""
 
 # Manipulating sequences
+"""To append multiple elements we can extend the sequence:"""
+my_list = [1, 2, 3]
+my_list.extend("abc")
+print(my_list)
+
+"""We can also insert element into the sequence. 
+Its not recommended to use often as it is 
+much slower then appending or extending and it also shifts 
+all the other elements to the RHS"""
+my_list = [2,3,4,5]
+my_list.insert(0,100)
+print(my_list)
+my_list.insert(4, 4.5)
+print(my_list)
