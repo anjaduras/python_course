@@ -46,7 +46,8 @@ elif number == 20:
     )
 else:
     print(
-        "Your score is",
-        number,
-        ". This result is unexpected. Please check the quiz logic.",
+        "Your score is {}. This result is unexpected. Please check the quiz logic.".format(
+            number
+        )
     )
+
