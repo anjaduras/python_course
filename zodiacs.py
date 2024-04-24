@@ -38,15 +38,15 @@ def get_month_from_day(day, is_leap_year=False):
     # return an error message
     return "Invalid day or month configuration"
 
-
-# Example usage (leap year)
-day = 246  # February 29th in a leap year
-month = get_month_from_day(day, is_leap_year=True)
-print(f"Day {day} falls in {month} (leap year).")
-
 year_day = input("What day of the year is it?: ")
-is_leap_yeas = input("Is it leap year? (yes/no): ")
+is_it_leap = input("Is it leap year? (yes/no): ".lower())
 
 day = int(year_day)
 month = get_month_from_day(day)
+if is_it_leap == "yes":
+    is_leap_year = True
+elif is_it_leap == "no":
+    is_leap_year = False
+else:
+    print("Error message")
 print(f"Day {day} falls in {month}.")
