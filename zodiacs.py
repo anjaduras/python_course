@@ -38,6 +38,7 @@ def get_month_from_day(day, is_leap_year=False):
     # return an error message
     return "Invalid day or month configuration"
 
+
 year_day = input("What day of the year is it?: ")
 is_it_leap = input("Is it leap year? (yes/no): ".lower())
 
