@@ -1,18 +1,23 @@
 """Hi! Got inspired to do some zodiac programs.
-Im planning to do this in a couple of steps:
-1st: write a snippet that sais that the __ day
-of the year is this month.
-2nd: snippet saying that this is this exact day of this month.
-3rd: no user input, but converts date to zodiac
-4th: user input."""
+
+I'm planning to do this in a couple of steps:
+1st: Write a snippet that says "The __ day of the year is this month."
+2nd: Snippet saying "This is this exact day of this month." (No user input)
+3rd: No user input, but converts date to zodiac.
+4th: User input.
+"""
 
 
-# First Step:
+# First Step: Function to determine month from day
 def get_month_from_day(day, is_leap_year=False):
+    """
+    This function takes a day number (1-366) and a leap year boolean and returns the corresponding month.
+    """
+
     # Define month lengths for a common year
     month_days = {
         "January": 31,
-        "February": 28,
+        "February": 28,  # Initial value for non-leap year
         "March": 31,
         "April": 30,
         "May": 31,
@@ -26,7 +31,7 @@ def get_month_from_day(day, is_leap_year=False):
     }
 
     if is_leap_year:
-        month_days["February"] = 29
+        month_days["February"] = 29  # Update February length only if it's a leap year
 
     current_day = 0
     for month, days in month_days.items():
@@ -39,15 +44,21 @@ def get_month_from_day(day, is_leap_year=False):
     return "Invalid day or month configuration"
 
 
+# Get user input for day and leap year
 year_day = input("What day of the year is it?: ")
-is_it_leap = input("Is it leap year? (yes/no): ".lower())
+is_it_leap = input("Is it leap year? (yes/no): ").lower()
 
-day = int(year_day)
-month = get_month_from_day(day)
-if is_it_leap == "yes":
-    is_leap_year = True
-elif is_it_leap == "no":
-    is_leap_year = False
-else:
-    print("Error message")
+try:
+    day = int(year_day)
+    if is_it_leap not in ("yes", "no"):
+        print("Error: Please enter yes or no for leap year.")
+        exit()
+    is_leap_year = (is_it_leap == "yes")  # Convert yes/no to boolean
+except ValueError:
+    print("Error: Please enter a valid number for the day of the year.")
+    exit()
+
+# Determine month based on day and leap year
+month = get_month_from_day(day, is_leap_year)
 print(f"Day {day} falls in {month}.")
+
