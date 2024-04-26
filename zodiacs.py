@@ -1,5 +1,4 @@
 """Hi! Got inspired to do some zodiac programs.
-
 I'm planning to do this in a couple of steps:
 1st: Write a snippet that says "The __ day of the year is this month."
 2nd: Snippet saying "This is this exact day of this month." (No user input)
@@ -8,13 +7,7 @@ I'm planning to do this in a couple of steps:
 """
 
 
-# First Step: Function to determine month from day
 def get_month_from_day(day, is_leap_year=False):
-    """
-    This function takes a day number (1-366) and a leap year boolean and returns the corresponding month.
-    """
-
-    # Define month lengths for a common year
     month_days = {
         "January": 31,
         "February": 28,  # Initial value for non-leap year
@@ -31,7 +24,7 @@ def get_month_from_day(day, is_leap_year=False):
     }
 
     if is_leap_year:
-        month_days["February"] = 29  # Update February length only if it's a leap year
+        month_days["February"] = 29
 
     current_day = 0
     for month, days in month_days.items():
@@ -44,7 +37,6 @@ def get_month_from_day(day, is_leap_year=False):
     return "Invalid day or month configuration"
 
 
-# Get user input for day and leap year
 year_day = input("What day of the year is it?: ")
 is_it_leap = input("Is it leap year? (yes/no): ").lower()
 
@@ -53,7 +45,7 @@ try:
     if is_it_leap not in ("yes", "no"):
         print("Error: Please enter yes or no for leap year.")
         exit()
-    is_leap_year = (is_it_leap == "yes")  # Convert yes/no to boolean
+    is_leap_year = is_it_leap == "yes"  # Convert yes/no to boolean
 except ValueError:
     print("Error: Please enter a valid number for the day of the year.")
     exit()
@@ -61,4 +53,3 @@ except ValueError:
 # Determine month based on day and leap year
 month = get_month_from_day(day, is_leap_year)
 print(f"Day {day} falls in {month}.")
-
