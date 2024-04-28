@@ -53,6 +53,6 @@ def calculate_percentage(number1, number2):
   percentage = (number2 / number1) * 100
   return percentage
 number1 = 286
-number2 = 77
+number2 = 78
 percentage = calculate_percentage(number1, number2)
-print(f"{number2} is {percentage:.0f}% of {number1}.")
+print(f"{number2} is {percentage:.1f}% of {number1}.")
