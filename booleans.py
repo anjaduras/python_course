@@ -55,7 +55,7 @@ elif number == 2:
     print(f"{number}nd month of the year is called {text}")
 elif number == 3:
     print(f"{number}rd month of the year is called {text}")
-elif 4 <= number <= 12:    
+elif 4 <= number <= 12:
     print(f"{number}th month of the year is called {text}")
 else:
     print("Choose a number must between 1 and 12")

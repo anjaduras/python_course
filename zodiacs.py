@@ -55,4 +55,4 @@ print(f"Day {day} falls in {month}.")
 day_of_year_message = get_month_from_day(day, is_leap_year)
 print(day_of_year_message)
 
-#rewriting tomorrow with vlad's suggestions
+# rewriting tomorrow with vlad's suggestions
