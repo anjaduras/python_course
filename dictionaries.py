@@ -12,5 +12,5 @@ family["Daughter"] = "Anja"
 print(family)
 family["Pet"] = "Mira"
 print(family)
-for role, name in family.items():
+for name, role in family.items():
     print(f"{role}: {name}")
