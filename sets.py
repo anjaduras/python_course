@@ -37,3 +37,15 @@ print(set1 - set2)
 print(set2 - set1)
 # SHowcase of set difference being uncommutative.
 print(set1 - set1)
+print()
+
+#6:Set Comprehensions
+numbers = {x for x in range(1, 11) if x % 2 == 0}  
+print(numbers)
+print()
+
+#7: Findind Unique Characters
+text = "hello world"
+unique_chars = set(text)
+print(unique_chars)
+#May not follow the exact order of elements
